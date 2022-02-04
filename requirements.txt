@@ -3,6 +3,6 @@ gunicorn
 django-heroku
 djongo
 django-cors-headers
-mongo_auth
-rest_framework
+mango-jwt
+djangorestframework
 pymongo
