@@ -5,3 +5,4 @@ personal_doc/db.sqlite3
 personal_doc/personal_doc/__pycache__/
 personal_doc/personal_doc_app/__pycache__/
 personal_doc/personal_doc_app/migrations/__pycache__/
+.env
