@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 
+
+# Configure Django App for Heroku.
+import django_heroku
+
 import environ
 
 env = environ.Env()
@@ -154,6 +158,4 @@ MANGO_JWT_SETTINGS = {
     # "secondary_username_field": "mobile" # default is None
 }
 
-# Configure Django App for Heroku.
-import django_heroku
 django_heroku.settings(locals())
