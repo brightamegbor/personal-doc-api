@@ -2,7 +2,7 @@ django
 gunicorn
 django-heroku
 djongo
-corsheaders
+django-cors-headers
 mongo_auth
 rest_framework
 pymongo
