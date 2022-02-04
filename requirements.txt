@@ -6,3 +6,4 @@ django-cors-headers
 mango-jwt
 djangorestframework
 pymongo
+django-environ
