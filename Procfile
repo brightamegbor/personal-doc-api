@@ -1,1 +1,1 @@
-web: gunicorn personal_doc:app
+web: gunicorn personal_doc.wsgi --log-file -
