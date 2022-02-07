@@ -1,1 +1,1 @@
-web: gunicorn personal_doc.wsgi.application
+web: gunicorn personal_doc.wsgi
