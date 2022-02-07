@@ -14,7 +14,7 @@ from pathlib import Path
 
 
 # Configure Django App for Heroku.
-# import django_heroku
+import django_heroku
 
 import environ
 
@@ -158,4 +158,4 @@ MANGO_JWT_SETTINGS = {
     # "secondary_username_field": "mobile" # default is None
 }
 
-# django_heroku.settings(locals(), databases=False),
+django_heroku.settings(locals(), databases=False),
