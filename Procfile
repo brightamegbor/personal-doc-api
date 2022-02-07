@@ -1,1 +1,1 @@
-web: gunicorn personal_doc.wsgi --log-file -
+web: gunicorn personal-doc-api.wsgi --log-file -
