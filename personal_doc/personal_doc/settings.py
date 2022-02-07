@@ -158,4 +158,4 @@ MANGO_JWT_SETTINGS = {
     # "secondary_username_field": "mobile" # default is None
 }
 
-django_heroku.settings(locals())
+django_heroku.settings(locals(), databases=False),
