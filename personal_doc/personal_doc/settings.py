@@ -39,7 +39,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'https://personal-doc-api.herokuapp.com',
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    'vercel.app'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
