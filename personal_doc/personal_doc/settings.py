@@ -10,11 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 
 # Configure Django App for Heroku.
-import django_heroku
+# import django_heroku
 
 import environ
 
@@ -35,7 +36,11 @@ SECRET_KEY = env('DJANGO_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://personal-doc-api.herokuapp.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
@@ -158,4 +163,5 @@ MANGO_JWT_SETTINGS = {
     # "secondary_username_field": "mobile" # default is None
 }
 
-django_heroku.settings(locals(), databases=False),
+# django_heroku.settings(locals(), databases=False),
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
