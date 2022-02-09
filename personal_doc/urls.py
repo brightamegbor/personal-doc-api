@@ -19,5 +19,6 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('mongo_auth.urls')),
+    path('', include('personal_doc_app.urls')),
     # url(r'^', include('personal_doc_app.urls')),
 ]

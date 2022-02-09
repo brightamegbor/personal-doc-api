@@ -6,3 +6,4 @@ personal_doc/personal_doc/__pycache__/
 personal_doc/personal_doc_app/__pycache__/
 personal_doc/personal_doc_app/migrations/__pycache__/
 .env
+.vercel
