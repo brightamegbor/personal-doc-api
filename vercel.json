@@ -1,13 +1,13 @@
 {
   "builds": [{
-      "src": "personal_doc/personal_doc/wsgi.py",
-      "use": "@ardnt/vercel-python-wsgi",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.8" }
+      "src": "personal_doc/wsgi.py",
+      "use": "@goranmoomin/vercel-python-wsgi",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
   }],
   "routes": [
       {
           "src": "/(.*)",
-          "dest": "personal_doc/personal_doc/wsgi.py"
+          "dest": "personal_doc/wsgi.py"
       }
   ]
 }

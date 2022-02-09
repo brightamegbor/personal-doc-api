@@ -34,18 +34,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://personal-doc-api.herokuapp.com',
     'localhost',
     '127.0.0.1',
-    'vercel.app'
+    'personal-doc-api-brightamegbor.vercel.app'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
+    'personal-doc-api-brightamegbor.vercel.app',
+    'https://personal-doc-api.herokuapp.com'
 )
 
 
